@@ -77,7 +77,7 @@ async def healthz():
 async def metadata():
     return MetadataResponse(
         team_name="Vera 2.0",
-        team_members=["Sanat"],
+        team_members=["Daksh Chauhan"],
         model="deterministic-template-engine (no LLM in the composition path)",
         approach=(
             "Rule-based decision/ranking layer scores every available trigger against the merchant's "
@@ -86,7 +86,7 @@ async def metadata():
             "anti-hallucination validator checks every number/date in the output against the source "
             "context before it is sent, falling back to a guaranteed-safe template otherwise."
         ),
-        contact_email="vk1129.iitd@gmail.com",
+        contact_email="chauhan.dakshdc1@gmail.com",
         version="1.0.0",
         submitted_at=utcnow_iso(),
     )
