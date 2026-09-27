@@ -1,0 +1,167 @@
+
+[95m[1m======================================================================[0m
+[95m[1m                  magicpin AI Challenge — LLM Judge                   [0m
+[95m[1m======================================================================[0m
+
+[94m[INFO][0m LLM Provider: Gemini (gemini-3.8-flash)
+[94m[INFO][0m Testing LLM connection...
+[92m[PASS][0m LLM connected successfully
+
+[95m[1m======================================================================[0m
+[95m[1m                     LLM JUDGE — FULL_EVALUATION                      [0m
+[95m[1m======================================================================[0m
+
+[94m[INFO][0m Bot: http://localhost:8080
+[94m[INFO][0m LLM: Gemini (gemini-3.8-flash)
+[94m[INFO][0m Loaded: 5 categories, 10 merchants, 25 triggers
+
+[96m[1m--- WARMUP ---[0m
+
+[92m[PASS][0m healthz (2071ms)
+[92m[PASS][0m metadata — Team: Vera 2.0, Model: deterministic-template-engine (no LLM in the composition path)
+
+[96m[1m--- CONTEXT PUSH ---[0m
+
+  [PASS] category/dentists
+  [PASS] category/gyms
+  [PASS] category/pharmacies
+  [PASS] category/restaurants
+  [PASS] category/salons
+  [PASS] merchant/001
+  [PASS] merchant/002
+  [PASS] merchant/003
+  [PASS] merchant/004
+  [PASS] merchant/005
+
+[96m[1m--- FULL EVALUATION ---[0m
+
+[92m[PASS][0m All contexts pushed
+
+[96m[1m--- SCORING COMPOSITIONS ---[0m
+
+[94m[INFO][0m Batch 1: 2 actions (2058ms)
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 503: Service Unavailable
+
+[96mMessage:[0m "Dr. Bharat, calls -50% down hai is week. Kya ek qu..."
+  Specificity            [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 25/50[0m
+[35m[LLM][0m Analyzing message...
+
+[96mMessage:[0m "Dr. Meera, compliance heads-up: DCI revised radiog..."
+  Specificity            [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Category Fit           [[92m████████████████████[2m[0m] [92m10/10[0m
+  Merchant Fit           [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Decision Quality       [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Engagement             [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+
+  [1mTOTAL: 46/50[0m
+[94m[INFO][0m Batch 2: 3 actions (2032ms)
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 503: Service Unavailable
+
+[96mMessage:[0m "Heads-up Suresh — DC vs MI at Arun Jaitley Stadium..."
+  Specificity            [[92m████████████████████[2m[0m] [92m10/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 30/50[0m
+[35m[LLM][0m Analyzing message...
+
+[96mMessage:[0m "Anjali, plan lapse hue 38 din ho gaye — visibility..."
+  Specificity            [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Category Fit           [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+  Merchant Fit           [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Decision Quality       [[92m██████████████████[2m░░[0m] [92m 9/10[0m
+  Engagement             [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+
+  [1mTOTAL: 43/50[0m
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 503: Service Unavailable
+
+[96mMessage:[0m "Lakshmi, Diwali sirf 188 din door hai. Your "Hairc..."
+  Specificity            [[92m██████████████[2m░░░░░░[0m] [92m 7/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 27/50[0m
+[94m[INFO][0m Batch 3: 2 actions (2071ms)
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 503: Service Unavailable
+
+[96mMessage:[0m "Suresh, corporate bulk thali package ke liye ek st..."
+  Specificity            [[91m██████[2m░░░░░░░░░░░░░░[0m] [91m 3/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 23/50[0m
+[35m[LLM][0m Analyzing message...
+
+[96mMessage:[0m "Karthik, views -30% down hai is week — lekin yeh n..."
+  Specificity            [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[92m██████████████[2m░░░░░░[0m] [92m 7/10[0m
+
+  [1mTOTAL: 28/50[0m
+[94m[INFO][0m Batch 4: 2 actions (2058ms)
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 503: Service Unavailable
+
+[96mMessage:[0m "Ramesh, urgent: atorvastatin ke batches AT2024-110..."
+  Specificity            [[92m████████████████████[2m[0m] [92m10/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 30/50[0m
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 429: Too Many Requests
+
+[96mMessage:[0m "Padma, kids yoga summer camp ke liye ek starter dr..."
+  Specificity            [[91m██████[2m░░░░░░░░░░░░░░[0m] [91m 3/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 23/50[0m
+[94m[INFO][0m Batch 5: 1 actions (2066ms)
+[35m[LLM][0m Analyzing message...
+[93m[WARN][0m LLM error: HTTP Error 429: Too Many Requests
+
+[96mMessage:[0m "Vikas, aapka Google profile abhi verified nahi hai..."
+  Specificity            [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Category Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Merchant Fit           [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Decision Quality       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Engagement             [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+  [1mTOTAL: 25/50[0m
+
+[96m[1m--- FINAL SUMMARY ---[0m
+
+[94m[INFO][0m Messages scored: 10
+
+  Avg Specificity        [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Avg Category Fit       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Avg Merchant Fit       [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Avg Decision Quality   [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+  Avg Engagement         [[93m██████████[2m░░░░░░░░░░[0m] [93m 5/10[0m
+
+[1m  AVERAGE SCORE: 26/50 (52%)[0m
+
+  [93mNEEDS IMPROVEMENT[0m

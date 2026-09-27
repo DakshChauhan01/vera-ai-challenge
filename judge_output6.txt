@@ -1,0 +1,70 @@
+
+[95m[1m======================================================================[0m
+[95m[1m                  magicpin AI Challenge — LLM Judge                   [0m
+[95m[1m======================================================================[0m
+
+[94m[INFO][0m LLM Provider: Gemini (gemini-3.8-flash)
+[94m[INFO][0m Testing LLM connection...
+[92m[PASS][0m LLM connected successfully
+
+[95m[1m======================================================================[0m
+[95m[1m                     LLM JUDGE — FULL_EVALUATION                      [0m
+[95m[1m======================================================================[0m
+
+[94m[INFO][0m Bot: http://localhost:8080
+[94m[INFO][0m LLM: Gemini (gemini-3.8-flash)
+[94m[INFO][0m Loaded: 5 categories, 10 merchants, 25 triggers
+
+[96m[1m--- WARMUP ---[0m
+
+[92m[PASS][0m healthz (2050ms)
+[92m[PASS][0m metadata — Team: Vera 2.0, Model: deterministic-template-engine (no LLM in the composition path)
+
+[96m[1m--- CONTEXT PUSH ---[0m
+
+  [PASS] category/dentists
+  [PASS] category/gyms
+  [PASS] category/pharmacies
+  [PASS] category/restaurants
+  [PASS] category/salons
+  [PASS] merchant/001
+  [PASS] merchant/002
+  [PASS] merchant/003
+  [PASS] merchant/004
+  [PASS] merchant/005
+
+[96m[1m--- FULL EVALUATION ---[0m
+
+[92m[PASS][0m All contexts pushed
+
+[96m[1m--- SCORING COMPOSITIONS ---[0m
+
+[94m[INFO][0m Batch 1: 0 actions (2058ms)
+[94m[INFO][0m Batch 2: 0 actions (2064ms)
+[94m[INFO][0m Batch 3: 0 actions (2049ms)
+[94m[INFO][0m Batch 4: 1 actions (2083ms)
+[35m[LLM][0m Waiting 15 seconds to respect rate limits, then analyzing message...
+
+[96mMessage:[0m "Ramesh, urgent: atorvastatin ke batches AT2024-110..."
+  Specificity            [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Category Fit           [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+  Merchant Fit           [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Decision Quality       [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+  Engagement             [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+
+  [1mTOTAL: 36/50[0m
+[94m[INFO][0m Batch 5: 0 actions (2042ms)
+
+[96m[1m--- FINAL SUMMARY ---[0m
+
+[94m[INFO][0m Messages scored: 1
+
+  Avg Specificity        [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Avg Category Fit       [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+  Avg Merchant Fit       [[93m████████████[2m░░░░░░░░[0m] [93m 6/10[0m
+  Avg Decision Quality   [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+  Avg Engagement         [[92m████████████████[2m░░░░[0m] [92m 8/10[0m
+
+[1m  AVERAGE SCORE: 36/50 (72%)[0m
+
+  [93mGOOD[0m
